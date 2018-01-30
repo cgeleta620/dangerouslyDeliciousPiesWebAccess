@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<hmtl>
+    <title>Dangerously Delicious Pie Form</title>
+
+    {% include "form.html" %}
+
+    <p><strong>The Pie table:</strong> </p>
+<ol>
+
+    {% for pie in pie_array %}
+    <li>Name: {{pie.pie_name}} ID: {{pie.pie_id}}</li>
+    {% endfor %}
+
+</ol>
+
+<a href="http://dangerouspiesbalt.com/" target="_blank">Dangerously Delicious Pies</a>
+
+
+</hmtl>

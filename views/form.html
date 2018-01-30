@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<h3>Insert</h3>
+
+<form action="index.php" method="POST">
+     Pie name: <br>
+    <input type="text" name="pie_name" value=""><br>
+    Pie Quantity:<br>
+    <input type="text" name="pie_quantity" value=""><br>
+    Pie ID:<br>
+    <input type="text" name="pie_id" value=""><br><br>
+
+    Main Ingredient:<br>
+    <select name="ing_id">
+        {% for ing in ing_array %}
+        <option value="{{ing.ing_id}}">{{ing.ing_name}}</option>
+        {% endfor %}
+
+    </select><br><br>
+
+   Quantity of Ing: <br>
+    <input type="text" name="quantity" value=""><br><br>
+
+    Type of Pie:<br>
+    <select name="type_id">
+        <option value="1">Sweet Pie</option>
+        <option value="2">Savory Pie</option>
+        <option value="3">Quiche</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+
+
+</html>
